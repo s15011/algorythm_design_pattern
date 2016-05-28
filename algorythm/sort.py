@@ -18,7 +18,7 @@ def selection_sort(data):
                   minimum = t
 
         data[i], data[minimum] = data[minimum], data[i]
-        
+
 
 
 def bubble_sort(data):
@@ -52,7 +52,7 @@ def shell_sort(data):
             data[j + gap] = tmp
         gap //= 2
 
-def merge_sort(data):    
+def merge_sort(data):
     mid = len(data)
     if mid == 1:
         return data
@@ -175,7 +175,7 @@ if __name__=='__main__':
     print('経過時間:', (end-start))
     """
 
-    
+
     start = time.time()
 
     for _ in range(LOOP_COUNT):
