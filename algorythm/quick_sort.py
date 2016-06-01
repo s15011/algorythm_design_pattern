@@ -13,7 +13,7 @@ def quick_sort(data):
 
     pivot = data [0]
 
-    
+
 
     left = []
     right = []
@@ -38,7 +38,7 @@ def quick_sort2(data):
 
     pivot = data [0]
 
-    
+
 
     left = []
     right = []

@@ -58,10 +58,25 @@ class Calc:
                         state = self.ST_NG
                 except IndexError:
                     state = self.ST_OK
-
             pos += 1
 
         if state == self.ST_OK:
-            pass
+            print("現在の状態 = 数式OK\n")
+            print("値1 =", val1)
+            print("演算子　=", op)
+            print("値2　=", val2)
+            result = 0
+            if op == '+':
+                result = val1 + val2
+            elif op == '-':
+                result = val1 - val2
+            elif op == '*':
+                result = val1 * val2
+            elif op == '/':
+                result = val1 / val2
+            print("計算結果　=", result)
+        else:
+            print("現在の状態 = 数式NG\n")
+            print("数式に誤りがあります。")
 
 Calc().calculate("1234+5678")
