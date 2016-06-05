@@ -83,6 +83,9 @@ def quick_sort(data):
 
     pivot = data [0]
 
+    if len( data) > 2:
+        pivot = data[ 0] if data[ 0] < data[ 1] else data[ 1]
+
     left = []
     right = []
 
