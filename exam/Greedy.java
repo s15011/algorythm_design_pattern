@@ -10,11 +10,11 @@ public class Greedy {
         sum = 0;
         for (i = 0; i < 6; i++) {
             n = change / val[i];
-            System.out.printf("%d円効果 = %d枚\n", val[i], n);
+            System.out.printf("%d円硬貨 = %d枚\n", val[i], n);
             sum += n;
             change %= val[i];
         }
-        System.out.printf("硬化の合計枚数 = %d枚\n", sum);
+        System.out.printf("硬貨の合計枚数 = %d枚\n", sum);
 
         return;
     }
