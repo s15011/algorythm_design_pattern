@@ -2,8 +2,10 @@ public class Boiya {
     public static void main(String...args) {
         int len1, len2, n, i;
         String pos;
-        String s1 = "I like Nikkei-software.";
-        String s2 = "I like Nikkei-software.";
+        System.out.println("比較文章1 入力してください");
+        String s1 = new java.util.Scanner(System.in).nextLine();//"I like Nikkei-software.;"
+        System.out.println("比較文章2 入力してください");
+        String s2 = new java.util.Scanner(System.in).nextLine();//"I like Nikkei-software.";
 
         len1 = s1.length();
         len2 = s2.length();
