@@ -7,6 +7,7 @@ public class Greedy {
         System.out.printf("お釣りの金額は?");
         change = new java.util.Scanner(System.in).nextInt();
 
+        //処理
         sum = 0;
         for (i = 0; i < 6; i++) {
             n = change / val[i];
