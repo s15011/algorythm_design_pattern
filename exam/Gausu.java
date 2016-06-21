@@ -18,6 +18,7 @@ public class Gausu{
             }
         }
 
+        //tsuyopon
         for (j = NUM -1; j > 0; j--) {
             for (i = j -1; i >= 0; i--) {
                 a[i][NUM] -= a[i][j] * a[j][NUM];
